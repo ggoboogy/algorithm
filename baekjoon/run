@@ -1,0 +1,5 @@
+#!/bin/bash
+file=$1
+name=${file/.cpp/}
+g++ $file -o $name
+./$name
